@@ -6,7 +6,7 @@ function App() {
 
   return (
     <h2>
-       This is myFirst React Appxcfz
+       This is myFirst React App
       </h2>
       
    )
