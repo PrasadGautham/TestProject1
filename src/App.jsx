@@ -1,13 +1,23 @@
 import { useState } from 'react'
 import './App.css'
+import FuncComp from './FuncComp'
+import ClassComp from './ClassComp'
 
 function App() {
 
 
   return (
-    <h2>
+   <div>
+    <h1>
        This is myFirst React App
-      </h2>
+      </h1>
+      <div>
+   <FuncComp/>
+      </div>
+      <div>
+         <ClassComp/>
+      </div>
+      </div>
       
    )
 }
