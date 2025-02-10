@@ -8,6 +8,9 @@ import FragmentsComponent from "./FragmentsComponent.jsx";
 import UseStateComponent from "./UseStateComponent.jsx";
 import LifeCycleComponent from "./LifeCycleComponent.jsx";
 import UseEffectComponent from "./UseEffectComponent.jsx";
+import UseRef from "./UseRef.jsx"
+import Events from "./Events.jsx"
+import FormControlled from "./FormControlled.jsx"
 
 function App() {
   return (
@@ -23,6 +26,10 @@ function App() {
       <LifeCycleComponent name="Gauth" age={90}></LifeCycleComponent>
       <UseStateComponent />
       <UseEffectComponent />
+      <UseRef />
+      <Events />
+      <FormControlled />
+     
     </div>
   );
 }
