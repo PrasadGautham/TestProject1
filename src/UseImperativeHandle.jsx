@@ -1,6 +1,6 @@
 import { useImperativeHandle, useRef } from "react";
 
-const UseImperativeHandle = ({ref}) => {
+const UseImperativeHandle = ({ ref }) => {
   const h2Ref = useRef();
   useImperativeHandle(ref, () => {
     return {

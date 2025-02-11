@@ -8,9 +8,12 @@ import FragmentsComponent from "./FragmentsComponent.jsx";
 import UseStateComponent from "./UseStateComponent.jsx";
 import LifeCycleComponent from "./LifeCycleComponent.jsx";
 import UseEffectComponent from "./UseEffectComponent.jsx";
-import UseRef from "./UseRef.jsx"
-import Events from "./Events.jsx"
-import FormControlled from "./FormControlled.jsx"
+// import UseRef from "./UseRef.jsx";
+import Events from "./Events.jsx";
+import FormControlled from "./FormControlled.jsx";
+import FormUnControlled from "./FormUncontrolled.jsx";
+import FormGeneral from "./FormGeneral";
+import UseRef from "./useRef.jsx";
 
 function App() {
   return (
@@ -29,7 +32,8 @@ function App() {
       <UseRef />
       <Events />
       <FormControlled />
-     
+      <FormUnControlled />
+      <FormGeneral />
     </div>
   );
 }
