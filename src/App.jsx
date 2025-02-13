@@ -14,11 +14,12 @@ import FormControlled from "./FormControlled.jsx";
 import FormUnControlled from "./FormUncontrolled.jsx";
 import FormGeneral from "./FormGeneral";
 import UseRef from "./useRef.jsx";
+import LoopComponent from "./LoopComponent.jsx";
 
 function App() {
   return (
     <div>
-      <FuncComp />
+      {/* <FuncComp />
       <ClassComp />
       <Jsx />
       <FragmentsComponent />
@@ -33,7 +34,8 @@ function App() {
       <Events />
       <FormControlled />
       <FormUnControlled />
-      <FormGeneral />
+      <FormGeneral /> */}
+      <LoopComponent/>
     </div>
   );
 }
