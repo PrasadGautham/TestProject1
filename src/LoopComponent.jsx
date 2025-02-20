@@ -39,7 +39,7 @@ const LoopComponent = () => {
             }}
             key={item.id}
           >
-            <p>{item.brand}</p>
+            <p className="external-css">{item.brand}</p>
             <p>{item.price}</p>
             <p>{item.color}</p>
           </div>

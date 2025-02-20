@@ -15,11 +15,15 @@ import FormUnControlled from "./FormUncontrolled.jsx";
 import FormGeneral from "./FormGeneral";
 import UseRef from "./useRef.jsx";
 import LoopComponent from "./LoopComponent.jsx";
+import Style from "./Style.jsx";
+import CreateBrowserRouter from "./CreateBrowserRouter.jsx";
+import TraditionalRouting from "./TraditionalRouting.jsx";
 
 function App() {
   return (
+   
     <div>
-      {/* <FuncComp />
+       {/* <FuncComp />
       <ClassComp />
       <Jsx />
       <FragmentsComponent />
@@ -34,8 +38,12 @@ function App() {
       <Events />
       <FormControlled />
       <FormUnControlled />
-      <FormGeneral /> */}
+      <FormGeneral />
       <LoopComponent/>
+      <Style/>*/}
+      {/* <CreateBrowserRouter /> */}
+      <TraditionalRouting />
+
     </div>
   );
 }

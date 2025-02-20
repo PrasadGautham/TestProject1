@@ -1,0 +1,7 @@
+@mixin background-burlywood {
+    background-color: burlywood;
+  }
+  .test-scss {
+    @include background-burlywood;
+    color: deeppink;
+  }

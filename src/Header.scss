@@ -1,0 +1,17 @@
+.appNav {
+    margin-bottom: 20px;
+    a {
+      margin-right: 10px;
+      padding: 10px;
+      &.active {
+        background-color: aqua;
+      }
+    }
+  }
+  .dark {
+    background-color: #5d6f6f;
+    color: white;
+    a {
+      color: white;
+    }
+  }
