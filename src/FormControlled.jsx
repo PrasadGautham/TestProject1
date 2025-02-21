@@ -8,6 +8,7 @@ const FormControlled = () => {
   };
   const formHandler = (e) => {
     e.preventDefault();
+    console.log(form)
   };
   return (
     <div>

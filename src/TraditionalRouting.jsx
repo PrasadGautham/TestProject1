@@ -8,26 +8,28 @@ import DynamicRouting from "./DynamicRouting";
 import FormLayout from "./FormLayout";
 import Header from "./Header";
 import JSX from "./Jsx";
+import { ThemeProvider } from "./ThemeContext";
+import API from "./API";
 
 const TraditionalRouting = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<Header />}>
-        <Route path="form" element={<FormLayout />}>
-          <Route index element={<FormControlled />} />
-          <Route path="controlled" element={<FormControlled />} />
-          <Route path="uncontrolled" element={<FormUnControlled />} />
-          <Route path="generalform" element={<FormGeneral />} />
-        </Route>
-
-        <Route path="/" element={<Events />} />
-        <Route path="/jsx" element={<JSX />} />
-        <Route path="/dynamic/:id" element={<DynamicRouting />} />
-        <Route path="/*" element={<h1>not found</h1>} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="form" element={<FormLayout />}>
+            <Route index element={<FormGeneral />} />
+            <Route path="controlled" element={<FormControlled />} />
+            <Route path="uncontrolled" element={<FormUnControlled />} />
+          </Route>
+          <Route path="/" element={<Events />} />
+          <Route path="/jsx" element={<JSX />} />
+          <Route path="/api" element={<API />} />
+          <Route path="/dynamic/:id" element={<DynamicRouting />} />
+          <Route path="/*" element={<h1>not found</h1>} />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 };
 

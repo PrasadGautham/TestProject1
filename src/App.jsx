@@ -18,6 +18,7 @@ import LoopComponent from "./LoopComponent.jsx";
 import Style from "./Style.jsx";
 import CreateBrowserRouter from "./CreateBrowserRouter.jsx";
 import TraditionalRouting from "./TraditionalRouting.jsx";
+import ErrorBoundary from "./ErrorBoundary.jsx";
 
 function App() {
   return (
@@ -42,7 +43,10 @@ function App() {
       <LoopComponent/>
       <Style/>*/}
       {/* <CreateBrowserRouter /> */}
+
+      <ErrorBoundary>
       <TraditionalRouting />
+      </ErrorBoundary>
 
     </div>
   );
