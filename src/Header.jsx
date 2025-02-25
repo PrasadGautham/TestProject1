@@ -45,6 +45,12 @@ const Header = () => {
       >
         API
       </NavLink>
+      <NavLink
+        className={({ isActive }) => (isActive ? "active" : "")}
+        to="/memocomp"
+      >
+        MemoComp
+      </NavLink>
       <button onClick={switchTheme}>
         Switch to {theme === "light" ? "dark" : "light"}
       </button>
